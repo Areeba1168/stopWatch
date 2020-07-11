@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+</head>
+    <style>
+        body{
+            background-color:black;
+            color: #607D8B;          
+            text-align: center;
+        }
+        .number h1{
+            font-family: sans-serif;
+            font-weight: bolder;          
+        }
+        button{
+            border: 2px solid white;
+            border-radius: 10px;
+            background-color: black;
+            color:#607D8B ;
+            margin-top: 80px;
+            font-weight: bolder;
+            padding: 10px;
+            font-size: x-large;
+        }.number{
+            width: 160px;
+            height: 160px;
+            border: 5px solid white;
+            border-radius: 50%; 
+            margin-left: auto;
+            margin-right: auto;        
+        }
+        .outline{
+            width: 180px;
+            height: 180px;
+            border: 5px solid white;
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 12px;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color:#7986CB ;
+            color: white;
+            border-color: black;
+        }
+        .number span{
+            text-align: center;
+            line-height: 140px;
+            color: #37474F;
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+
+    </style>
+<body>
+    <div>
+        <h1>Stop Watch</h1>
+    </div>
+    <div class="outline">
+        <div class="number">
+            <span id="min">00 </span> <span>:</span> 
+            <span id="sec">00 </span> <span>:</span> 
+            <span id="msec">00 </span> 
+        </div>
+    </div>    
+    <div>
+        <button id="start" onclick="checkOut()">Start</button>
+        <button onclick="stop()">Stop</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
